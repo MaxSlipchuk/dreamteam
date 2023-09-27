@@ -1,0 +1,88 @@
+body{
+    background-color: rgba(249, 75, 59, 0.788);
+    color: #fff;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333; 
+    padding: 30px; 
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: #fff; 
+    font-size: 20px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column; 
+
+}
+
+.main-row {
+    display: flex;
+    flex-direction: row; /* Arrange columns horizontally */
+}
+
+.small-inform {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    padding: 7px;
+}
+
+.main-column-left{
+    flex: 1;
+    box-sizing: border-box; 
+    padding-top: 5px;
+    padding-right: 2px;
+
+}
+.main-column-right{
+    flex: 1;
+    box-sizing: border-box; 
+    padding-top: 5px;
+    padding-left: 2px;
+}
+
+.image-container {
+    margin-right: 0px;
+    margin-bottom: 0px; 
+}
+
+.image{
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+#maxs1{
+    height: 20%;
+    max-height: 250px;
+    
+}
+
+.column{
+    flex: 1; /* Кожен стовпець займає половину ширини */
+    padding: 5px; /* Задати відступ для кращого вигляду */
+}
+
+.row {
+    margin: 5px 0; /* Задати відступ між рядками */
+}
+
+.name{
+    margin: 0; /* Видалити всі відступи для заголовка */
+}
+
+.text-inf{
+    padding: 5px;
+    font-size: 18px;
+}
