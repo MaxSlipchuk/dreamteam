@@ -1,22 +1,9 @@
-<!DOCTYPE html>
+{% extends 'main/base.html' %}
 {% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main</title>
+{% block links %}
     <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
-</head>
-<header>
-    <div id ='header'class='nav-container'>
-        <a href="">ОСВІТА</a>
-        <a href="">ДОСЯГНЕННЯ</a>
-        <a href="">КОМАНДА</a>
-        <a href="">ХОБІ</a>
-        <a href="">ГАЛЕРЕЯ</a>
-    </div>
-</header>
-<body>
+{% endblock %}
+{% block content %}
     <div class="main-container">
         <!-- перший рядок -->
         <div class="main-row">
@@ -102,9 +89,8 @@
                             <img class="image" id="maxs1" src="{% static 'main/img/img_maxs1.jpg' %}" alt="">
                         </div> 
                     </div>
-                    
                 </div>
             </div>
         </div>
-</body>
-</html>
+    </div>
+{% endblock %}
