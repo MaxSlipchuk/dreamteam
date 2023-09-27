@@ -65,7 +65,6 @@ body{
 #maxs1{
     height: 20%;
     max-height: 250px;
-    
 }
 
 .column{
@@ -80,7 +79,6 @@ body{
 .name{
     margin: 0; /* Видалити всі відступи для заголовка */
     text-align: center;
-
 }
 
 .text-inf{
@@ -89,5 +87,12 @@ body{
     text-align: center;
 }
 
+a:hover{
+    letter-spacing: 4px;
+    transition-duration: 2s;
+}
 
-/* <br /> */
+a:not(:hover) {
+    letter-spacing: normal;
+    transition-duration: 2s;
+}

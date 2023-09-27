@@ -7,43 +7,36 @@
     border-radius: 10px;
     text-align: center;
 }
-/* vcedv */
 
 #img1, #img2, #img3{
-    /* padding-right: 3px;
-    padding-left: 3px; */
     margin: 15px;
     max-height: 350px;
     border: 2px solid #fff;
     border-radius: 10px;
 }
 
+img:hover{
+    box-shadow: 12px 12px 12px black;
+    transition: 1s;
+}
+img:not(:hover){
+    box-shadow: none;
+    transition: 2s;
+}
+
 #img2{
     width: 35%;
     max-height: 350px;
-    /* border: 2px solid #fff;
-    border-radius: 10px;
-    padding-right: 3px;
-    padding-left: 3px; */
 }
 
 #img1{
-    /* width: 20%; */
     max-height: 350px;
     height: 20%;
-    /* border: 2px solid #fff;
-    border-radius: 10px;
-    padding-right: 3px;
-    padding-left: 3px; */
 }
 
 #img3{
     width: 35%;
     max-height: 350px;
-    /* border: 2px solid #fff;
-    border-radius: 10px;
-    padding-right: 3px;
-    padding-left: 3px; */
 }
 
 .row{
@@ -51,4 +44,5 @@
     justify-content: center; /* Розмістити картинки по центру горизонталі */
     align-items: center; /* Розмістити картинки по центру вертикалі */
 }
+
 
