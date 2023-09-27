@@ -79,9 +79,15 @@ body{
 
 .name{
     margin: 0; /* Видалити всі відступи для заголовка */
+    text-align: center;
+
 }
 
 .text-inf{
     padding: 5px;
     font-size: 18px;
+    text-align: center;
 }
+
+
+/* <br /> */

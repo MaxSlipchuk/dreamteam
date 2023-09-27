@@ -24,9 +24,11 @@ from main import views as main_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # path('')
     path("achievement/", ach_views.achivement, name='achievement'),
     path("education/", ed_views.education, name='education'),
     path("galary/", gal_views.galary, name='galary'),
     path("hobby/", hob_views.hobby, name='hobby'),
-    path("main/", main_views.main, name='main')
+    path("", main_views.main, name='main')
 ]
+# 
