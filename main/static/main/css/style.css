@@ -62,9 +62,15 @@ body{
     border-radius: 10px;
 }
 
-#maxs1{
+#maxs1, #masha1{
     height: 20%;
     max-height: 250px;
+}
+
+#maxg1{
+    /* height: 20%; */
+    max-height: 250px;
+    width: 375px;
 }
 
 .column{

@@ -8,7 +8,7 @@
     text-align: center;
 }
 
-#img1, #img2, #img3{
+.image{
     margin: 15px;
     max-height: 350px;
     border: 2px solid #fff;
@@ -24,20 +24,18 @@ img:not(:hover){
     transition: 2s;
 }
 
-#img2{
+/* #img2{
     width: 35%;
     max-height: 350px;
 }
-
 #img1{
     max-height: 350px;
     height: 20%;
 }
-
 #img3{
     width: 35%;
     max-height: 350px;
-}
+} */
 
 .row{
     display: flex;
