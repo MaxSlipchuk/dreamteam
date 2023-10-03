@@ -3,22 +3,34 @@
 {% block links %}
     <link rel="stylesheet" href="{% static 'hobby/css/style.css' %}">
 {% endblock %}
+{% block script %}
+    <script defer src="{% static 'hobby/js/scriptvideo.js' %}"></script>
+{% endblock %}
 {% block content %}
-    <h1>сторінка хоббі</h1>
+<div class="container">
+    <div class="column">
+        <h3>Макс Сліпчук</h3>
+        <video id = "video" height='195' >
+            <source src="{% static 'hobby/img/video_max.mp4' %}" type="video/mp4"> 
+        </video>
+        <p>Це я пірнаю в Червоному морі, але зараз я дома!</p>
+    </div>
+    <div class="column" id = 'columnmasha'>
+        <h3>Маша Драгнєва</h3>
+        <img class="image" src="{% static 'hobby/img/masha.jpg' %}" alt="">
+        <p class="text">Я Марія Драгнєва, мені 14 років. Мої хобі: випалювання по дереву, їздити на велосипеді, грати в шашки та шахи, малювати, читати, колекціонувати каміння.</p>
+    </div>
+    <div class="column" id="columng">
+        <h3>Макс Григоренко</h3>
+        <img class="image" src="{% static 'hobby/img/maxg.jpg' %}" alt="">
+        <p class="text">Моє хоббі спорт. Я займаюсь щоб бути здоровим усе життя. Без спорту люди меньше б жили.</p>
+    </div>
+    <div class="column" id="columnr"> 
+        <h3>Радіон Тимченко</h3>
+        <img class="image" src="{% static 'hobby/img/rad.jpg' %}" alt="">
+        <p class="text">Моє хобі це баскетбол, я займаюсь їм пів року та граю в команді 'Прометей'</p>
+    </div>
+</div>
 {% endblock %}
 
 
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>сторінка хоббі</h1>
-</body>
-</html> -->

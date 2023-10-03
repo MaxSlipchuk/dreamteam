@@ -1,0 +1,79 @@
+.container{
+    background-color: rgba(249, 75, 59, 0.788);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    height: 200px;
+    max-height: 200px;
+    margin-top: 5px;
+    display: block;
+
+}
+
+.inblock{
+    background-color: #333;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    display: inline-flex;
+    position: relative;
+    top: 1%;
+    left: 5px;
+    bottom: 1%;
+    transition: all 2s; /* Плавний перехід всіх властивостей при зміні стану */
+    width: 400px; 
+}
+
+.image{
+    width: 50%;
+    max-height: 190px;
+    max-width: 190px;
+    min-width: 190px;
+}
+
+.title{
+    position: relative;
+    display: inline;
+    font-size: 22px;
+    text-align: center;
+}
+
+.text{
+    display: none; /* Почнемо з тексту, який схований */
+    opacity: 0; /* Текст також схований */
+    position: absolute;
+    display: inline-block;
+    right: 15%;
+    font-size: 26px;
+    text-align: center;
+    top: 50px;
+}
+
+.inblock:hover{
+    width: 99%;
+    text-shadow: 8px 8px 8px black;
+    box-shadow: 12px 12px 12px black;
+}
+
+.inblock:hover p {
+    display: block; /* Показувати текст при наведенні */
+    opacity: 1; /* Плавне з'явлення тексту */
+    bottom: 40%; /* Зміна bottom, щоб текст прилягав до нижньої частини відео при наведенні */
+    text-align: center;
+}
+
+.inblock:hover .title{
+    writing-mode: horizontal-tb;
+    transition: 1s;
+    left: 40%;
+}
+
+.inblock:not(:hover) .title{
+    left: 0%;
+    transition: 2s;
+    writing-mode: vertical-lr;
+}
+
+.inblock:not(:hover){
+    box-shadow: none;
+    width: 250px; /* Відновлення початкової висоти при знятті наведення */
+    min-height: 190px;
+}

@@ -1,0 +1,93 @@
+.container{
+    display: flex;
+    justify-content: space-between; /* Рівномірно розподіляє контейнери по горизонталі */
+    align-items: center; /* Вирівнює текст по вертикалі по центру */
+    flex-wrap: wrap; /* Завертає наступні контейнери на новий ряд, якщо вони не поміщаються */
+}
+
+.column{
+    flex: 1; /* Кожен контейнер розтягується, щоб займати однакову ширину і розділяти сторінку на 4 колонки */
+    text-align: center; /* Вирівнює текст внутрішніх елементів по центру */
+    border: 2px solid #fff; /* Додайте рамку для контейнерів за бажанням */
+    border-radius: 10px;
+    padding: 10px; /* Додайте внутрішній відступ для контейнерів за бажанням */
+    background-color: #333;
+    margin-top: 5px;
+    position: relative; /* Ця властивість задає контейнеру відносну позицію. */
+    overflow: hidden; /* не дає тексту виходити за межі колонки */
+    box-shadow: 12px 12px 12px black;
+    transition: all 0.5s; /* Плавний перехід всіх властивостей при зміні стану */
+}
+
+.column p {
+    display: none; /* Почнемо з тексту, який схований */
+    opacity: 0; /* Текст також схований */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    bottom: -15px; /* Змінено властивість bottom, щоб текст прилягав до нижньої частини відео */
+}
+
+.column:hover {
+    height: 310px; /* Зміна висоти при наведенні */
+    text-shadow: 8px 8px 8px black;
+    box-shadow: 12px 12px 12px black;
+}
+
+.column:hover p {
+    display: block; /* Показувати текст при наведенні */
+    opacity: 1; /* Плавне з'явлення тексту */
+    bottom: 0; /* Зміна bottom, щоб текст прилягав до нижньої частини відео при наведенні */
+}
+
+.column:not(:hover){
+    box-shadow: none;
+    height: 260px; /* Відновлення початкової висоти при знятті наведення */
+}
+
+/* пераметри для відео */
+#video{
+    border: 2px solid #fff; 
+    border-radius: 10px;
+}
+#video:hover{
+    box-shadow: 12px 12px 12px black;
+    transition: 1s;
+}
+#video:not(:hover){
+    box-shadow: none;
+    transition: 2s;
+}
+.image{
+    width:350px;
+    height:76% ;
+    max-height: 200px;
+}
+
+#columng:hover{
+    height:335px;
+}
+
+#columnmasha:hover{
+    height: 355px;
+}
+
+.image:hover{
+    box-shadow:12px 12px 12px black;
+    transition: 1s;
+}
+.image:not(:hover){
+    box-shadow: none;
+    transition: 2s;
+}
+
+.text{
+    max-width:360px;
+    text-align: center;
+    
+}
+#columnr:hover{
+    height:335px;
+}
