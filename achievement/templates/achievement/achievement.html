@@ -5,21 +5,33 @@
 {% endblock %}
 {% block content %}
     <div class="container">
-        <div class="inblock" id = 'cross'>
+        <div class="leftblock">
             <img class = "image" src="{% static 'achievement/img/img_cross.png' %}" alt="">
-            <h2 class="title">хрестики-нулики</h2>
+            <h2 class="titleleft">хрестики-нулики</h2>
             <p class="text"> Тут мав бути довгий текст по тому, як ми писали нашу першу гру! </p>
         </div>
         
     </div>
-    <div class="container" id = 'tanks'>
-        <h2>танчіки</h2>
+    <div class="container">
+        <div class="rightblock">
+            <img class = "image" id = 'right-img' src="{% static 'achievement/img/tank.png' %}" alt="">
+            <h2 class="titleright">танчіки</h2>
+            <p class="text"> Тут мав бути довгий текст по тому, як ми писали 8-бітні танчики! </p>
+        </div>
     </div>
-    <div class="container" id = 'player'>
-        <h2>музичний плеєр</h2>
+    <div class="container">
+        <div class="leftblock">
+            <img class = "image" src="{% static 'achievement/img/mus.png' %}" alt="">
+            <h2 class="titleleft">музичний плеєр</h2>
+            <p class="text"> Тут мав бути довгий текст по тому, як ми писали музикальний плеєр! </p>
+        </div>
     </div>
-    <div class="container" id = 'voice'>
-        <h2>голосовий асистент</h2>
+    <div class="container">
+        <div class="rightblock"'>
+            <img class = "image" id = 'right-img' src="{% static 'achievement/img/assistant.png' %}" alt="">
+            <h2 class="titleright" id = "voice">голосовий асистент</h2>
+            <p class="text"> Тут мав бути довгий текст по тому, як ми писали голосового асистента! </p>
+        </div>
     </div>
 {% endblock %}
 

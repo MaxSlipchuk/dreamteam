@@ -1,25 +1,25 @@
 .container{
-    background-color: rgba(249, 75, 59, 0.788);
+    background-color: rgb(67, 40, 40);
     border: 2px solid #fff;
     border-radius: 10px;
     height: 200px;
     max-height: 200px;
     margin-top: 5px;
     display: block;
+    position: relative;
 
 }
 
-.inblock{
+.leftblock{
     background-color: #333;
     border: 2px solid #fff;
     border-radius: 10px;
     display: inline-flex;
-    position: relative;
+    position: absolute;
     top: 1%;
     left: 5px;
     bottom: 1%;
     transition: all 2s; /* Плавний перехід всіх властивостей при зміні стану */
-    width: 400px; 
 }
 
 .image{
@@ -29,11 +29,13 @@
     min-width: 190px;
 }
 
-.title{
-    position: relative;
-    display: inline;
+.titleleft{
+    position: absolute;
     font-size: 22px;
     text-align: center;
+    padding-left: 190px;
+    bottom: 0;
+    top: 0;
 }
 
 .text{
@@ -41,39 +43,115 @@
     opacity: 0; /* Текст також схований */
     position: absolute;
     display: inline-block;
-    right: 15%;
     font-size: 26px;
     text-align: center;
     top: 50px;
 }
 
-.inblock:hover{
-    width: 99%;
+.leftblock:hover{
+    width:99%;
     text-shadow: 8px 8px 8px black;
     box-shadow: 12px 12px 12px black;
 }
 
-.inblock:hover p {
+.leftblock:hover p {
     display: block; /* Показувати текст при наведенні */
     opacity: 1; /* Плавне з'явлення тексту */
     bottom: 40%; /* Зміна bottom, щоб текст прилягав до нижньої частини відео при наведенні */
     text-align: center;
+    right: 20%;
+    left: 20%;
 }
 
-.inblock:hover .title{
+.leftblock:hover .titleleft{
     writing-mode: horizontal-tb;
     transition: 1s;
-    left: 40%;
+    left: 20%;
+    right: 20%;
+    padding-left: 0;
 }
 
-.inblock:not(:hover) .title{
+.leftblock:not(:hover) .titleleft{
     left: 0%;
     transition: 2s;
     writing-mode: vertical-lr;
 }
 
-.inblock:not(:hover){
+.leftblock:not(:hover){
     box-shadow: none;
     width: 250px; /* Відновлення початкової висоти при знятті наведення */
     min-height: 190px;
+}
+
+.rightblock{
+    position: absolute;
+    top: 1%;
+    bottom: 1%;
+    right: 0;
+    background-color: #333;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 250px;
+    transition: all 2s; /* Плавний перехід всіх властивостей при зміні стану */
+}
+
+#right-img{
+    position: absolute;
+    right: 0;
+}
+
+.titleright{
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    left: 0%;
+    writing-mode: vertical-lr;
+    text-align: center;
+}
+
+.rightblock:hover{
+    width: 100%;
+    text-shadow: 8px 8px 8px black;
+    box-shadow: 12px 12px 12px black;
+}
+
+.rightblock:hover #right-img{
+    position: absolute;
+    right: 0%;
+}
+
+.rightblock:hover .titleright{
+    writing-mode: horizontal-tb;
+    transition: 1s;
+    left: 20%;
+    right: 20%;
+    top: 0;
+}
+
+.rightblock:hover p {
+    display: block; /* Показувати текст при наведенні */
+    opacity: 1; /* Плавне з'явлення тексту */
+    bottom: 40%; /* Зміна bottom, щоб текст прилягав до нижньої частини відео при наведенні */
+    text-align: center;
+    right: 20%;
+    left: 20%;
+}
+
+.rightblock:not(:hover){
+    box-shadow: none;
+    width: 250px; /* Відновлення початкової висоти при знятті наведення */
+    min-height: 190px;
+}
+
+.rightblock:hover .titleleft{
+    writing-mode: horizontal-tb;
+    transition: 1s;
+    left: 40%;
+}
+
+#voice{
+    top: 5%;
+    /* padding-left: -5px; */
+    margin-left: 4px;
+    
 }
